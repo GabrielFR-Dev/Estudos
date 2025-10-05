@@ -1,2 +1,2 @@
-# Estudo
-Repositório feito para compartilhas testes e projetos sobre oque eu estou estudando
+# Estudos
+Repositório feito para compartilhar testes e projetos sobre oque eu estou estudando
