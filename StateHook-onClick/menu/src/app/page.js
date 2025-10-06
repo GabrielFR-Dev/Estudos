@@ -1,6 +1,8 @@
 'use client';
 import Menu from "@/componentes/menu";
 import { useState } from "react";
+import { CiMenuBurger } from "react-icons/ci";
+import { MdClose } from "react-icons/md";
 import estilos from "./page.module.css";
 
 export default function Home() {
@@ -11,10 +13,10 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <main className={estilos.main}>
       <header className={estilos.container}>
         <button className={estilos.botao} onClick={atualizarMenu}>
-          {menuAberto ? 'Fechar Menu' : 'Abrir Menu'}
+          {menuAberto ? <MdClose /> : <CiMenuBurger />}
         </button>
       </header>
       {menuAberto && (

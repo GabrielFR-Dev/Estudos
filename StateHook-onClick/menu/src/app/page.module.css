@@ -1,0 +1,15 @@
+
+
+.container {
+    background-color: #2b3945;
+    padding: 30px 20px;
+    border-bottom: 2px solid white ;
+}
+.botao {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+
