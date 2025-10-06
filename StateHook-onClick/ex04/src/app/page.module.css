@@ -1,0 +1,31 @@
+.container {
+    width: 600px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+.mensagem {
+    height: 800px;
+    padding: 50px;
+}
+
+.elementos {
+   display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.elementos h1 {
+    background-color: #7efed3;
+    padding: 15px 0px;
+}
