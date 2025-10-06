@@ -21,7 +21,7 @@ export default function Home() {
 
     <main className={estilos.container}>
       <div className={estilos.container_textual}>
-        <h1>Alterando estilos do elemento</h1>
+        <h1>Alterando estilos dos elementos</h1>
 
         <div className={elemento}></div>
 
