@@ -1,0 +1,105 @@
+.header_container {
+    width: 100%;
+    border-bottom: 1px solid rgb(156, 156, 156) ;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.header_container h1 {
+    font-size: 30px;
+}
+
+.header_container button {
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+.main_container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.main_container div {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.main_container h2 {
+    font-size: 35px;
+}
+
+.main_container button {
+    width: 120px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15%;
+    margin: auto;
+    font-weight: bold;;
+}
+
+.main_container p {
+    width: 591px;
+    margin: auto;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.dark_mode {
+    background-color: black;
+}
+.dark_mode .header_container h1 {
+    color: white;
+}
+.dark_mode .header_container button {
+    color: white;
+}
+.dark_mode .main_container div h2 {
+    color: white;
+}
+.dark_mode .main_container p {
+    color: white;
+}
+.light_mode .main_container button {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .main_container button {
+        width: 130px;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .main_container p {
+        width: 80%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_container div {
+        max-width: 300px;
+    }
+
+    .main_container p {
+        width: 90%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .main_container button {
+        width: 90px;
+        font-size: 12px;
+        padding: 6px;
+    }
+}
