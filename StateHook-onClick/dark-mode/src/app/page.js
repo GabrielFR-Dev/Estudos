@@ -1,4 +1,6 @@
 'use client';
+import Link from 'next/link';
+import { FaGithub } from "react-icons/fa";
 import estilos from "./page.module.css";
 import { useState } from "react";
 import { BsSun, BsMoon } from "react-icons/bs";
@@ -25,8 +27,14 @@ export default function Home() {
           </p>
           <button>Nossas Lojas</button>
         </div>
-
       </main>
+      <footer className={estilos.footer_container}>
+        <h3>Desenvolvido por Gabriel ferreira</h3>
+        <div>
+          <span>Acesse: </span>
+          <button className={estilos.botao}><Link href="https://github.com/GabrielFR-Dev" target='_blanck'>{<FaGithub />}</Link></button>
+        </div>
+      </footer>
     </div>
   )
 }
