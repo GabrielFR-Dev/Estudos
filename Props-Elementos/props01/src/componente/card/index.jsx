@@ -1,13 +1,13 @@
 /*Estruturando página teste */
-
+import estilos from "./Card.module.css";
+import Image from "next/image";
 
 export default function (props) {
     return (
-        <div>
-        <h1>{props.titulo}</h1>
-        <h2>R$ {props.preco},00</h2>
-        <p></p>
-        <small></small>
-        </div>
+      <div className={estilos.container_card}>
+        <h3>{props.signo}</h3>
+        <Image src={props.imagem} alt={props.signo}/>
+        <span>{props.dataInicio} - {props.dataFim}</span>
+      </div>
     );
 }

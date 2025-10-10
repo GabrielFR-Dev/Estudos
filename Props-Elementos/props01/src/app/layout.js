@@ -3,13 +3,13 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Props Elementos 01",
-  description: "Exemplo 01",
+  title: "BARALHO DOS SIGNOS",
+  description: "Exemplo de props em React",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body>
         {children}
       </body>
