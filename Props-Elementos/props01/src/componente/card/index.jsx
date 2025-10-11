@@ -10,6 +10,7 @@ import { PiPlant } from 'react-icons/pi';
 export default function (props) {
   return (
 
+
     <div className={props.elemento === "agua"
       ? estilos.card_signo_agua
       : props.elemento === "fogo"
@@ -31,12 +32,15 @@ export default function (props) {
           ) : props.elemento === "terra" ? (<PiPlant className={estilos.icone} />
           ) : props.elemento === "ar" && (<MdAir className={estilos.icone} />
           )}
-        </div>
 
+        </div>
         <Image src={props.imagem} alt={props.signo} className={estilos.image} />
         <span>{props.dataInicio} - {props.dataFim}</span>
+
+
       </div>
 
     </div>
+
   );
 }

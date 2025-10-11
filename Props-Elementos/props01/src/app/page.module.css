@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: oklch(14.7% 0.004 49.25);
+  
 }
 .container_card {
     width: 1440px;
