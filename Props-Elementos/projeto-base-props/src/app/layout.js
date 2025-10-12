@@ -2,8 +2,8 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "",
-  description: "",
+  title: "Dentes saúdaveis",
+  description: "Projeto base para aprender props e elementos no React",
 };
 
 export default function RootLayout({ children }) {
