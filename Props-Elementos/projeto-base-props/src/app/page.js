@@ -13,9 +13,9 @@ import MolduraInformacoes from "@/componente/MolduraInformacoes";
 
 export default function Home() {
   return (
-    <div>
+    <div className={estilos.documento}>
       <header className={estilos.topo}>
-        <Image src={Dente} alt={'dentes'} className={estilos.img_topo}/>
+        <Image src={Dente} alt={'dentes'} className={estilos.img_topo} />
         <p>
           Dentes Saudáveis
         </p>
@@ -23,20 +23,33 @@ export default function Home() {
 
       <main>
         <section className={estilos.secao_apresentacao}>
-          <h1>Os melhores <span className={estilos.destacaque}>APARELHOS DENTÁRIOS</span>!</h1>
-          <p>Confira abaixo todas as  especialidade odontológicas que temos à sua disposição!</p>
-          <div>
-            <Image src={Dente} alt={"DENTES"} />
-            <p>Pré-avaliação</p>
+          <div className={estilos.apresentacao}>
+            <h1>OS MELHORES<span className={estilos.destacaque}> APARELHOS DENTÁRIOS</span>!</h1>
+            <p className={estilos.apresentacao_paragrafo}>Confira abaixo todas as  especialidade odontológicas que temos à sua disposição!</p>
+            <div className={estilos.container_informacoes}>
+              <div className={estilos.informacoes}>
+                <div>
+                  <Image src={Dente} alt={"DENTES"} className={estilos.img_informacoes}/>
+                  <p>Pré-avaliação</p>
+                </div>
+                <div>
+                  <Image src={Dente} alt={"DENTES"} className={estilos.img_informacoes}/>
+                  <p>Raio-X digital</p>
+                </div>
+              </div>
 
-            <Image src={Dente} alt={"DENTES"} />
-            <p>Raio-X digital</p>
+              <div className={estilos.informacoes}>
+                <div>
+                  <Image src={Dente} alt={"DENTES"} className={estilos.img_informacoes}/>
+                  <p>Aparelho Dentários</p>
+                </div>
+                <div>
+                  <Image src={Dente} alt={"DENTES"} className={estilos.img_informacoes} />
+                  <p>Clareamento dental</p>
+                </div>
+              </div>
+            </div>
 
-            <Image src={Dente} alt={"DENTES"} />
-            <p>Aparelho Dentários</p>
-
-            <Image src={Dente} alt={"DENTES"} />
-            <p>Clareamento dental</p>
           </div>
         </section>
 

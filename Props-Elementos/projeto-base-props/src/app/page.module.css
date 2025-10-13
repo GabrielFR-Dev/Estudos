@@ -1,3 +1,5 @@
+
+
 /*CONTAINER TOPO*/
 .topo {
     color: #ffffff;
@@ -17,4 +19,57 @@
 .img_topo {
     width: 30px;
     height: 30px;
+}
+
+/*SEÇÃO APRESENTAÇÃO*/
+.secao_apresentacao {
+    width: 100%;
+    padding: 40px 0px;
+    background-color: #1b3675;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    margin: auto;
+    
+}
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    
+   
+}
+.apresentacao h1 {
+    font-size: 29px;
+    color: #cfa226
+}
+.apresentacao_paragrafo {
+    color: rgba(245, 245, 245, 0.699);
+    font-size: 20px;
+    line-height: 30px;
+}
+.destacaque {
+    color: #ffbb00;
+}
+.container_informacoes {
+   display: flex;
+   justify-content: space-between;
+   
+}
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: auto;
+}
+.informacoes div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img_informacoes {
+    width: 20px;
+    height: 20px;
 }
