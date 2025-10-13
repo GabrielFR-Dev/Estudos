@@ -93,6 +93,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 50px;
 }
 .img_beneficios {
     margin: auto;
@@ -129,7 +130,14 @@
 
 /*SECAO DEPOIMENTO*/
 
-.secao_depoimento div{
+.secao_depoimento {
+    text-align: center;
     display: flex;
+    flex-direction: column;
     gap: 30px;
+}
+.secao_depoimento div{
+    
+    display: flex;
+    gap: 20px;
 }

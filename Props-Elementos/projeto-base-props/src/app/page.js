@@ -81,7 +81,7 @@ export default function Home() {
           </section>
 
           <section className={estilos.secao_depoimento}>
-              <h3></h3>
+              <h2>VEJA O QUE <span className={estilos.negrito}>CLIENTES</span> ESTÃO FALANDO</h2>
 
             <div>
               <CardDepoimento
