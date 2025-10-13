@@ -10,11 +10,12 @@ import Dentista02 from "/public/dentista02.png";
 import CardDepoimento from "@/componente/CardDepoimento";
 import MolduraInformacoes from "@/componente/MolduraInformacoes";
 
+
 export default function Home() {
   return (
     <div>
       <header className={estilos.topo}>
-        <image src={Dente} alt={'dentes'} />
+        <Image src={Dente} alt={'dentes'} />
         <p>
           Dentes Saudáveis
         </p>
@@ -22,24 +23,39 @@ export default function Home() {
 
       <main>
         <section className={estilos.secao_apresentacao}>
-          <h1>Os melhores <span>APARELHOS DENTÁRIOS</span>!</h1>
+          <h1>Os melhores <span className={estilos.destacaque}>APARELHOS DENTÁRIOS</span>!</h1>
           <p>Confira abaixo todas as  especialidade odontológicas que temos à sua disposição!</p>
           <div>
-            <Image src={Dente} alt={"DENTES"}/>
+            <Image src={Dente} alt={"DENTES"} />
             <p>Pré-avaliação</p>
 
-            <Image src={Dente} alt={"DENTES"}/>
+            <Image src={Dente} alt={"DENTES"} />
             <p>Raio-X digital</p>
 
-            <Image src={Dente} alt={"DENTES"}/>
+            <Image src={Dente} alt={"DENTES"} />
             <p>Aparelho Dentários</p>
 
-            <Image src={Dente} alt={"DENTES"}/>
+            <Image src={Dente} alt={"DENTES"} />
             <p>Clareamento dental</p>
           </div>
         </section>
 
         <section className={estilos.secao_beneficio}>
+          <h2>POR QUE USAR <span className={estilos.negrito}>APARELHO</span></h2>
+          <Image src={Aparelho} alt={"APARELHO"} />
+          <div className={estilos.container_paragrafo_beneficio}>
+            <div className={estilos.paragro_beneficio}>
+              <h3>Alinhar os dentes</h3>
+              <p>Dentes desalinhados causam problemas nos dentes e podem aafetar a digestão dos alimentos e a respiração.
+              </p>
+
+              <h3>Melhorar a dicção e a higiene dentária</h3>
+              <p>Muitas pessoas não conseguem nem usar fio dental devido à posição da sua dentição. Contudo, a correção possibilita o cuidado com a saúde bucal de forma bem mais ampla.</p>
+
+              <h3>Corrigir espaço entre os dentes</h3>
+              <p>Uma dentição desalinhada e com espaços significativos incomodam muitas pessoas. Usar aparelho nos dentes é uma das formas mais eficientes para que esses problemas possam ser corrigidos.</p>
+            </div>
+          </div>
 
         </section>
 
@@ -121,8 +137,10 @@ export default function Home() {
         </section>
 
         <section className={estilos.secao_localizacao}>
-
+          <h2>ONDE ESTAMOS <span className={estilos.negrito}>LOCALIZADOS</span></h2>
+          <p>Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro - RJ. CEP: 22775-904</p>
           <div className={estilos.iframe}>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.111392959523!2d-43.36795292380455!3d-22.98293094059837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda293e673b27%3A0xc823a7a4acbf3512!2sAv.%20Ayrton%20Senna%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1760356336499!5m2!1spt-BR!2sbr" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
           </div>
 
@@ -131,6 +149,7 @@ export default function Home() {
       </main>
 
       <footer className={estilos.rodape}>
+        <p>@GabrielDev | </p>
 
       </footer>
 
