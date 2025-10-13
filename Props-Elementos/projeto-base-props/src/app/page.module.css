@@ -1,0 +1,20 @@
+/*CONTAINER TOPO*/
+.topo {
+    color: #ffffff;
+    background-color: #1b3675;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    padding: 20px 0px;
+    gap: 10px;
+    border-bottom: 1px solid #fff;
+}
+.topo p {
+    font-weight: 600;
+}
+.img_topo {
+    width: 30px;
+    height: 30px;
+}

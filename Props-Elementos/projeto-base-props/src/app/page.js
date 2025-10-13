@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <header className={estilos.topo}>
-        <Image src={Dente} alt={'dentes'} />
+        <Image src={Dente} alt={'dentes'} className={estilos.img_topo}/>
         <p>
           Dentes Saudáveis
         </p>
