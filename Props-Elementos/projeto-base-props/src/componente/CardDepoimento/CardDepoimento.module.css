@@ -1,0 +1,19 @@
+.card_elemento {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img_aparelho{
+    width: 200px;
+    height: 210px;
+}
+
+.card_elemento h3 {
+
+}
+
+.card_elemento p {
+
+}
