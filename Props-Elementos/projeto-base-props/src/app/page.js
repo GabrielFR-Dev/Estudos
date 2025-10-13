@@ -52,7 +52,7 @@ export default function Home() {
           </li>
 
           <li>
-            <Image src={Dente} alt="logo" titile="logo" />
+            <Image src={Dente} alt="logo" title="logo" />
             <p>Aparelho Dentários</p>
           </li>
 

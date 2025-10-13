@@ -1,144 +1,258 @@
-
-
-/*CONTAINER TOPO*/
+/* TOPO */
 .topo {
-    color: #ffffff;
     background-color: #1b3675;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.container_logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    width: 100%;
-    padding: 20px 0px;
-    gap: 10px;
-    border-bottom: 1px solid #fff;
+    padding: 20px;
 }
-.topo p {
-    font-weight: 600;
+
+.container_logo img {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
 }
-.img_topo {
-    width: 30px;
-    height: 30px;
+
+.container_logo p {
+    color: #fff;
+    font-size: 26px;
 }
 
 /*SEÇÃO APRESENTAÇÃO*/
 .secao_apresentacao {
-    width: 100%;
-    padding: 40px 0px;
     background-color: #1b3675;
+    padding: 120px 20px 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #ffffff;
-    margin: auto;
-    
+    gap: 30px;
 }
+
 .apresentacao {
+    max-width: 1024px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     text-align: center;
     
-   
 }
+
 .apresentacao h1 {
-    font-size: 29px;
-    color: #cfa226
+    color: #fdb203;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
 }
-.apresentacao_paragrafo {
-    color: rgba(245, 245, 245, 0.699);
+
+.apresentacao span {
+    font-weight: 500;
+}
+
+.secao_apresentacao p {
+    color: #fff;
     font-size: 20px;
-    line-height: 30px;
+    font-weight: 300;
+    line-height: 1.5em;
 }
-.destacaque {
-    color: #ffbb00;
-}
-.container_informacoes {
-   display: flex;
-   justify-content: space-between;
-   
-}
-.informacoes {
+
+.lista_servicos {
+    max-width: 1024px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.informacoes div {
+
+.lista_servicos li {
+    justify-content: center;
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-.img_informacoes {
-    width: 20px;
-    height: 20px;
+    flex: 1 1 400px;
+    padding: 10px 0px;
+
 }
 
-/*TODAS AS SECAO*/
+.lista_servicos li img {
+    object-fit: contain;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
 
-.container_secoes {
-    max-width: 60%;
-    margin: auto;
+.lista_servicos li p {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container_img_aparelho {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    object-fit: cover;
+}
+
+.container_img_aparelho img {
+    width: 100%;
+    height: 100%;
 }
 
 /*SECAO BENEFICIOS*/
 
 .secao_beneficio {
-    margin: 50px auto 30px auto ;
-    text-align: center;
+    padding: 50px 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.img_beneficios {
-    margin: auto;
-    width: 500px;
-    height: 220px;
+
+.secao_beneficio h2 {
+    margin-bottom: 30px;
+    text-align: center;
 }
-.container_secoes h2{
-    color: rgb(56, 55, 55);
-}
-.negrito {
-    color: black;
-    font-weight: 600;
-}
-.container_paragrafo_beneficio{
-    margin: auto;
-    text-align: left;
-}
-.paragro_beneficio{
+
+.lista_beneficios {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 20px;
+    justify-content: space-between;
 }
-.paragro_beneficio div {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 140px;
-    margin: auto;
-    
-    
-    
-}
-.paragro_beneficio div h3 {
-    font-size: 15px;
-    margin-bottom: 6px;
-}
-.paragro_beneficio div p {
-    font-size: 14px;
+
+.lista_beneficios li {
+    padding: 10px 10px;
+    list-style: none;
+    text-align: left;
+    flex: 1 1 300px;
 }
 
 /*SECAO DEPOIMENTO*/
 
 .secao_depoimento {
-    text-align: center;
+    padding: 50px 10px;
     display: flex;
     flex-direction: column;
+    gap: 40px
+}
+
+.secao_depoimento h2 {
+    text-align: center;
+}
+
+.container_depoimentos {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
-.secao_depoimento div{
-    
+
+/*SECAO INFORMACOES*/
+
+.secao_informacoes {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 30px;
+}
+
+.container_informacoes {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.lista_horarios {
+    line-height: 30px;
+    text-align: left;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gainsboro;
+}
+
+.card figure {
+    flex: 1 1 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+.card div {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/*SECAO LOCALIZACAO*/
+
+.secao_localizacao {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.secao_localizacao iframe {
+    margin: auto;
+    
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+
+.secao_localizacao div {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.secao_localizacao div h2 {
+    line-height: 50px;
+    padding-bottom: 20px;
+}
+
+/* Rodapé da página */
+.rodape {
+    background-color: #171d3f;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Classes para os subtitulos */
+.subtitulo {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    text-align: center;
+}
+
+.subtitulo span {
+    font-weight: 500;
 }
