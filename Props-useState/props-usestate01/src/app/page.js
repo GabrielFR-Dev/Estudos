@@ -1,8 +1,10 @@
 'use client'
 import { useState } from "react"; 
-import Image from "next/image";
 import imagemCachorro from "/public/cachorro.jpg";
 import imagemGato from "/public/gato.jpg";
+import CardAnimal from "@/componentes/CardAnimal";
+import CardInformacoes from "@/componentes/CardInformacoes";
+
 
 import estilos from "./page.module.css";
 
@@ -44,17 +46,13 @@ export default function Home() {
     </header>
 
     <main>
-      {/* Componente CardAnimal  */}
-      <div className={estilos.card_animal}>
-        <Image src={imagemAnimal} alt={tipoAnimal}/>
-      </div>
-
-      {/*Componente CardInformacoes */}
-      <div className={estilos.card_informacao}>
-        <h3>Informação sobre o {tipoAnimal}</h3>
-        <p>{InformacaoAnimal}</p>
-
-      </div>
+      <CardAnimal 
+       imagemAnimal={imagemAnimal}
+      />
+      <CardInformacoes 
+        tipoAnimal={tipoAnimal}
+        InformacaoAnimal={InformacaoAnimal}
+      />
     </main>
 
    </div>

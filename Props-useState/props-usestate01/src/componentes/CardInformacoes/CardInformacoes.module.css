@@ -1,0 +1,16 @@
+.card_informacao {
+    margin-top: 50px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.card_informacao h3 {
+    margin-bottom: 30px;
+}
+
+.card_informacao p {
+    width: 220px;
+    font-weight: 600;
+
+}
