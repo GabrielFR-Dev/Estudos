@@ -1,17 +1,11 @@
 'use client'
-import { useState } from "react"; 
-import imagemCachorro from "/public/cachorro.jpg";
-import imagemGato from "/public/gato.jpg";
+import { useState } from "react";
 import CardAnimal from "@/componentes/CardAnimal";
 import CardInformacoes from "@/componentes/CardInformacoes";
-
-
 import estilos from "./page.module.css";
+import Topo from "@/componentes/Topo";
 
 export default function Home() {
-  let imagemAnimal = "";
-  let InformacaoAnimal = "";
-  let tipoAnimal = "Cachorro";
 
   const [tipoDoComponenteCard, setTipoDocomponenteCard] = useState("cachorro");
 
@@ -23,38 +17,19 @@ export default function Home() {
     }
   };
 
-  if (tipoDoComponenteCard === "cachorro") {
-    imagemAnimal = imagemCachorro;
-    InformacaoAnimal = "É um mamífero carnívoro da familia dos canideos.";
-    tipoAnimal = "Cachorro";
-  } else {
-    imagemAnimal = imagemGato;
-    InformacaoAnimal = "é um mamifero carnivoro da familia dos felideos";
-    tipoAnimal = "Gato";
-  }
-  
-
-  
-
   return (
-   <div className={estilos.container_principal}>
-    {/* Componente topo */}
-    <header>
-        <h1>Projeto props + useState</h1>
-        <p>Clique no botão para mudar os componentes abaixo</p>
-        <button onClick={alterarState}>Mudar Animal</button>
-    </header>
+    <div className={estilos.container_principal}>
+      <Topo clickAlterarAnimal={alterarState}/>
+      <main>
+        <CardAnimal
+          tipoAnimal = { tipoDoComponenteCard}
+        />
+        <CardInformacoes
+          tipoAnimal={tipoDoComponenteCard}
+          
+        />
+      </main>
 
-    <main>
-      <CardAnimal 
-       imagemAnimal={imagemAnimal}
-      />
-      <CardInformacoes 
-        tipoAnimal={tipoAnimal}
-        InformacaoAnimal={InformacaoAnimal}
-      />
-    </main>
-
-   </div>
+    </div>
   );
 }

@@ -1,0 +1,9 @@
+.container_topo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid grey;
+    padding: 20px 0px;
+}
