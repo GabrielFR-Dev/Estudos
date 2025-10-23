@@ -2,7 +2,7 @@
 import Image from "next/image";
 import estilos from "./page.module.css";
 import { useState } from "react";
-import { jogosExclusivos } from "@/dados/jogos";
+import { jogosExclusivos } from "@/app/dados/jogos";
 import ItemJogos from "./componentes/ItemJogos";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
   
   
   return (
-    <div className="estilos.container_principal">
+    <div className={estilos.container_principal}>
       <h2>Lista de Jogos Exclusivos</h2>
       
       <div className={estilos.container_btns}>

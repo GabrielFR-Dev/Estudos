@@ -18,7 +18,7 @@ export default function ItemJogos ({ nome, plataforma}) {
                     }
                 />
             </figure>
-            <div>
+            <div className={estilos.nome}>
                 <p>{nome}</p>
             </div>
         </div>
