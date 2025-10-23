@@ -4,6 +4,7 @@ import estilos from "./page.module.css";
 import { useState } from "react";
 import { jogosExclusivos } from "@/app/dados/jogos";
 import ItemJogos from "./componentes/ItemJogos";
+import Lupa from "/public/lupa.png"
 
 export default function Home() {
 
@@ -16,6 +17,10 @@ export default function Home() {
   const handleLimparFiltro = () => {
     setListaJogos(jogosExclusivos)
   }
+
+  const handleBuscarJogo = (textoDigitado) => {
+    console.log(textoDigitado)
+  };
   
   
   return (
@@ -27,6 +32,16 @@ export default function Home() {
         <button onClick={() => handleFiltrarJogoPlataforma("playstation")}>PlayStation</button>
         <button onClick={() => handleFiltrarJogoPlataforma("nintendo")}>Nintendo</button>
         <button onClick={() => handleLimparFiltro()}>Limpar Filtro</button>
+      </div>
+
+      <div className={estilos.container_input}>
+        <Image src={Lupa} alt="Icone" />
+        <input 
+          type="text"
+          onChangeCapture={(event) => handleBuscarJogo(event.target.value)}
+          placeholder="Pesquise um jogo ou plataforma"
+        />
+
       </div>
 
       <div className={estilos.container_cards}>
