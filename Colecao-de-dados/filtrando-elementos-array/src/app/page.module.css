@@ -8,6 +8,33 @@
   align-items: center;
 }
 
+.container_input {
+  width: 100%;
+  padding: 5px;
+  max-width: 425px;
+  border-radius: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container_input img {
+  width: 45px;
+  height: 45px;
+}
+.container_input input {
+  width: 100%;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0;
+}
+.container_input input::placeholder {
+  text-decoration: underline;
+}
+
 .container_cards {
   width: 100%;
   max-width: 425px;
