@@ -1,7 +1,7 @@
 # 💛 JavaScript — Estudos e Anotações
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black&style=flat-square)
-![Status](https://img.shields.io/badge/Status-Em%20Aprendizado-yellow?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Concluído-green?style=flat-square)
 ![Linguagem](https://img.shields.io/badge/Linguagem-Principal-blue?style=flat-square)
 
 ---
