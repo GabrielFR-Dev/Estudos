@@ -65,7 +65,13 @@ Aqui você encontrará:
 
 **Gabriel Ferreira**  
 📍 Desenvolvedor Front-End em formação  
-🔗 [GitHub](https://github.com/seu-usuario) | [LinkedIn](https://linkedin.com/in/seu-linkedin)
+
+<a href="https://github.com/GabrielFR-Dev" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+<a href="https://www.linkedin.com/in/gabrieldeveloperweb" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
 
 ---
 
