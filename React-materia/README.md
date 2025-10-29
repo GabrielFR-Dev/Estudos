@@ -2,7 +2,7 @@
 
 ![React](https://img.shields.io/badge/React-18.0.0-61DAFB?logo=react&logoColor=white&style=flat-square)
 ![Next.js](https://img.shields.io/badge/Next.js-14.0-black?logo=next.js&logoColor=white&style=flat-square)
-![Status](https://img.shields.io/badge/Status-Em%20Aprendizado-yellow?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Concluído-green?style=flat-square)
 ![Linguagem](https://img.shields.io/badge/Linguagem-JavaScript-blue?style=flat-square)
 
 ---
@@ -53,16 +53,6 @@ Aqui você encontrará:
 - Anotações dos conceitos estudados  
 - Códigos comentados e exemplos práticos  
 - Mini projetos desenvolvidos durante o aprendizado  
-
----
-
-## 📅 Próximos Passos
-
-- [ ] Estudar **useEffect** e ciclo de vida de componentes  
-- [ ] Aprender **Context API**  
-- [ ] Criar **hooks personalizados**  
-- [ ] Trabalhar com **rotas dinâmicas no Next.js**  
-- [ ] Integrar **APIs externas** em projetos React  
 
 ---
 
