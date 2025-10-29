@@ -62,8 +62,8 @@ Sinta-se à vontade para explorar, clonar e acompanhar minha jornada! 😄
 | Status | Tópico | Nível |
 |:------:|:-------|:------:|
 | 🟢 | Fundamentos de HTML / CSS | ✅ Concluído |
-| 🟡 | JavaScript Intermediário | 🚧 Em andamento |
-| 🔵 | React + Hooks | 🔜 Próximo |
+| 🟡 | JavaScript Intermediário | ✅ Concluído |
+| 🔵 | React + Hooks | ✅ Concluído|
 | ⚪ | Node.js e APIs | 📚 Estudando |
 
 ---
