@@ -1,6 +1,6 @@
-const dataAtual = new Date();
+const dataAtual = new Date(); //Pegando a data do sistma
 
-const MesAno = {
+const MesAno = {   //Stylo da data  
     month: "long",
     year: 'numeric',
 }
