@@ -1,4 +1,4 @@
-let label_nome  = "Nome:";
+let label_nome  = "Nome:"; //variaveis
 let valor_nome = "Jorge Luiz";
 
 let label_profissao = "Profissão:";
