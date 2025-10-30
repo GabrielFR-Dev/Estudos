@@ -2,7 +2,7 @@ let contador = 10;
 
 console.log("----- CONTAGEM REGRESSIVA -----")
 
-do {
+do {  //estrutura de repetição
 
     console.log(contador)
     contador--
