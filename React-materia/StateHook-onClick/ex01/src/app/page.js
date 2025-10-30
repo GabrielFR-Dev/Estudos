@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <p>{mensagem}</p>
-      <button onClick={ alterarMensagem }>Clique aqui !!</button>
+      <button onClick={ alterarMensagem }>Clique aqui !!</button> {/*Alterando a mesagem */}
     </div>
   );
 }
