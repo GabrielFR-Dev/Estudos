@@ -32,7 +32,7 @@ export default function Home() {
         <h3>Desenvolvido por Gabriel ferreira</h3>
         <div>
           <span>Acesse: </span>
-          <button className={estilos.botao}><Link href="https://github.com/GabrielFR-Dev" target='_blanck'>{<FaGithub />}</Link></button>
+          <button className={estilos.botao}><Link href="https://github.com/GabrielFR-Dev" target='_blanck'>{<FaGithub />}</Link></button> {/*Icones  */}
         </div>
       </footer>
     </div>
