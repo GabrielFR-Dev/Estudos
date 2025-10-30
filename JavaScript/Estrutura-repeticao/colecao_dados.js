@@ -1,4 +1,4 @@
-let alunos = [
+let alunos = [ //Coleção de dados
     "Gabriel",
     "Fernanda",
     "Michele",
@@ -9,7 +9,7 @@ let alunos = [
 
 let contador = 0;
 
-console.log("Temos o total de: "+alunos.length+" Alunos Dentro da sala de aula");
+console.log("Temos o total de: "+alunos.length+" Alunos Dentro da sala de aula"); //contando quantos alunos tem
 
 while( contador < alunos.length){
     
