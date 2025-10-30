@@ -4,7 +4,7 @@ import Lupa from '/public/lupa.png';
 import Image from 'next/image';
 import ItemJogos from './componentes/ItemJogos';
 import { useState } from 'react';
-import { filtrarJogo, buscarJogo, retornarJogos } from './servico';
+import { filtrarJogo, buscarJogo, retornarJogos } from './servico'; //buscarjogo
 
 export default function Home() {
   const [listaJogos, setListaJogos] = useState(retornarJogos);
