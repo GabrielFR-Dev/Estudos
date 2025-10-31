@@ -7,21 +7,27 @@ let funcionairos = [
 ];
 
 let contador = 0;
-let encontrouHabilitado = false;
+let encontrouHabilitado = false;  //Variável booleana para indicar se um funcionario habilitado foi encontrado
 
-do {
+while (contador < funcionairos.length){
     
     let funcionario = funcionairos[contador];
+
+    
+    //Se um funcionario tiver a propriedade habilitado com o valor true, o loop será interrompido pelo comando break...
 
     if( funcionario.habilitado == true) {
         console.log("Funcionário habilitado encontrado: "+funcionario.nome)
         encontrouHabilitado = true
-        break;
+        break; //O loop é interrompido de vez
     }
 
     contador++
-} while( contador < funcionairos.length ); 
+}
     
+
+//Cso o valor da variável seja falso, a mensagem vai informar que nehum usuário habilitado foi encontrado
+
 if (!encontrouHabilitado) {
     console.log("Nenhum funcionário habilitado encontrado!");
 }

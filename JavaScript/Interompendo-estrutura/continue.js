@@ -15,11 +15,15 @@ while ( contador < alunos.length) {
 
     contador++;
 
+    
+    //Se a média do aluno for menor que 6, a iteração atual será interrompida, e o próximo aluno será percorrido no loop
     if ( aluno.media < 6) {
-        continue;
+        continue; //O loop é interrompido avançando para a próxima iteração
     }
 
-    console.log("Id: " + aluno.id);
+    
+    //Se a condição acima for verdadeira, essas linhas de código não serão executadas na iteração atual
+    console.log("Id: " + aluno.id);     
     console.log("Nome: " + aluno.nome);
     console.log("Média " + aluno.media);
     console.log("\n");
