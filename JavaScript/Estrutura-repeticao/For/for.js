@@ -9,8 +9,12 @@ let multiplicador = entradaDados.question("Informe o numero que deseja ver a tab
 
 console.log(`\nVoce acaba de escolher a tabuada do ${multiplicador}\n`);
 
+
+//Inialização da variavel, condição, incremento
 for(let contador = 0; contador <= 10; contador++){
 
+    
+    //Enquanto a condição for verdadeira, esse código será executado
     let soma = contador * multiplicador;
 
 
