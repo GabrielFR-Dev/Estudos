@@ -1,3 +1,5 @@
+
+//Array de produtos
 let produtos_array = [
     {id: 1, nome: "Mouse", preco: 50 },
     {id: 2, nome: "Teclado", preco: 90},
@@ -7,11 +9,15 @@ let produtos_array = [
 
 let percentual_desconto = 10;
 
+
+//Percorrendo o array para imprimir o novo preço dos produtos
 for ( let produto of produtos_array ) {
 
-    let nome = produto.nome;
+    //Guardando o nome e o preço do produto nas variáveis nome e preco
+    let nome = produto.nome; 
     let preco = produto.preco;
 
+    //Calculando o valor do desconto e o novo preço do produto
     let valor_desconto = (preco * percentual_desconto) / 100;
     let novo_preco = preco - valor_desconto;
 
