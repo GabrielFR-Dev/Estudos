@@ -10,5 +10,4 @@ do {  //estrutura de repetição
 
 
 }while(contador > -1 );
-
-
+ 
