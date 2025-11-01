@@ -1,3 +1,5 @@
+// Para remover espaços em branco do inicio e do final a string basta usar  método trim()
+
 let telefone_1 = "(99) 99999-9999";
 let telefone_2 = "      (99) 99999-9999     ";
 
