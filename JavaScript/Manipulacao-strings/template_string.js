@@ -1,12 +1,3 @@
-let num1 = 5;
-let num2 = 4;
-let soma = num1 + num2
-
-console.log(`\nCalculadora de soma de numero,\n
-hoje iremos somar o ${num1} + ${num2}
-o resultado dessa soma será
-equivalente a ${soma}`)
-
 // TEMPLATE STRING
 
 // Utilizamos assentos graves ``
@@ -24,3 +15,13 @@ equivalente a ${soma}`)
 //console.log("hoje iremos somar o " + num1 + " + " + num2);
 //console.log("o resultado dessa soma será");
 //console.log("equivalente a " + soma);
+
+let num1 = 5;
+let num2 = 4;
+let soma = num1 + num2
+
+console.log(`\nCalculadora de soma de numero,\n
+hoje iremos somar o ${num1} + ${num2}
+o resultado dessa soma será
+equivalente a ${soma}`)
+
