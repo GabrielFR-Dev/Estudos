@@ -1,7 +1,10 @@
+//Às vezes uma informação de acesso - por exemplo, um e-mail - pode ser cadastrada com letras maiusclas ou minusculas, isso pode causar diferenças na validação dessa informação
+
+
 let email_acesso = "gabrielferreira@gmail.com";
 let email_cadastro = "GABRIELFERREIRA@gmail.com";
 
-if (email_acesso.toLowerCase() == email_cadastro.toLocaleLowerCase() ){
+if (email_acesso.toLowerCase() == email_cadastro.toLowerCase() ){
                                         
     console.log("Fou enviado um link de ativação para o seu email.")
 
@@ -11,4 +14,6 @@ if (email_acesso.toLowerCase() == email_cadastro.toLocaleLowerCase() ){
 }
 
 // .toUpperCase() = Maiúsculas
+
+
 // .toLowerCase() = Minúsculas
