@@ -2,6 +2,13 @@
 
 const hoje = new Date();
 
+
+//Imprimindo uma string com a data e a hora local
+console.log( hoje.toLocaleString());
+
+//Imprimindo timestamp
+console.log( hoje.valueOf());
+
 //Imprimindo uma string com a data armazenada
 console.log( hoje.toString());
 
