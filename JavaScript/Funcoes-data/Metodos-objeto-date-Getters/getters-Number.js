@@ -1,4 +1,4 @@
-//Getters
+//Getters retorna um valor do tipo NUMBER
 
 // O objeto do tipo Date possui funções nativas que são utilizadas para retornar um valor referente a data. Essas funções são chamadas de métodos.
 
