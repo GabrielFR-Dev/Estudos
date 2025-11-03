@@ -1,3 +1,5 @@
+//Metodos setters usados para alterar um valor do objeto date.
+
 const dataAtual = new Date();
 
 dataAtual.setFullYear(2005);        // Altera o ano
@@ -20,5 +22,19 @@ console.log( dataAtual );
 
 dataAtual.setMilliseconds(15);      // Altera os millisegundos
 console.log( dataAtual );
+
+// Assim como os getters, para cada método setter acima existe um similar para setar o valor UTC
+
+dataAtual.setUTCFullYear(1998);
+dataAtual.setUTCMonth(5);
+dataAtual.setUTCDate(20);
+dataAtual.setUTCHours(11);
+dataAtual.setUTCMinutes(0);
+dataAtual.setUTCSeconds(59);
+dataAtual.setUTCMilliseconds(15);
+
+// Outro metodo que pode ser utilizado para alterar uma data é o setTime()
+
+dataAtual.setTime() //Altera o timestamp da data
 
 
