@@ -1,3 +1,7 @@
+const dataAtual = new Date();
+
+
+
 const personalizandoData =  {
     weekday: 'long', // segunda-feira
     month: "2-digit", // 02
