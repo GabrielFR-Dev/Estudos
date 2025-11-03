@@ -16,7 +16,7 @@ console.log("Retorna uma string com um formato universal (ISO 8601"+ dataAtual.t
 // O horario retornado sera sempre com o fuso horario 0
 
 
-console.log("Retirba uma string com apenas a data e o tempo: " + dataAtual.toLocaleString()) //Retorna uma string com apenas a adata e o tempo
+console.log("Retirba uma string com apenas a data e o tempo: " + dataAtual.toLocaleString()) //Retorna uma string com apenas a a data e o tempo
 
 console.log("Retorna uma string com a data apenas: "+ dataAtual.toLocaleDateString()) // Retorna uma string com apenas a data 
 

@@ -6,6 +6,8 @@
 
 //As opções de idiomas não são suportadas em todos os dispositivos. Por exemplo no Node o Idioma pt-BR não está disponivel
 
+// A ordem impressa pelo método. toLocaleString() será baseada no idoma indicado
+
 
 //VALORES DO PARÂMETRO OPTIONS
 
