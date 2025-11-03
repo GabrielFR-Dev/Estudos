@@ -13,14 +13,19 @@ console.log("\n" + hoje.valueOf() + "\n\n" );
 const dataAtual = new Date();
 const dataPostagem = new Date('2025-11-01T00:00');
 
+//Pegando o timestamp das datas
 const timeAtual = dataAtual.getTime();
 const timePostagem = dataPostagem.getTime();
 
+//Verifica a dirença em milissegundos
 const diferenca = timeAtual - timePostagem;
 
+// Convertendo em horas
 const segundos = diferenca / 1000;
 const minutos = segundos / 60;
 const horas = minutos / 60;
 
+
+//Exibindo a diferença
 console.log(horas);
 
