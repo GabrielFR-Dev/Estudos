@@ -7,6 +7,9 @@ const diasDaSemana = [
     "Quarta-feira",
     "Quinta-feira",
     "Sexta-feira",
+    
 ]
 
 diasDaSemana.push("Sábado"); //Inserindo um elemento no array
+
+// Este novo elemento vai ser inserido no final do array
