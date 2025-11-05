@@ -20,3 +20,5 @@ function imprimirProduto (produto, index) {
 //A função nativa forEach executando a função imprirProduto para cada elemento do array produtos 
 produtos.forEach(imprimirProduto); 
 //Nome do array, função nativa, Função que será executada em cada elemento do array
+
+// o forEach pode ser utilizado para percorrer um array a fim de imprimir no terminal os itens de um carrinho de compra....
