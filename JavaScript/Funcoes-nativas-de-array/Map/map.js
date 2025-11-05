@@ -20,3 +20,5 @@ function retornaProduto(produto) {
 const produtosExibicao = produtosCadastrados.map(retornaProduto);
 
 console.log(produtosExibicao);
+
+//Criamos um novo array porém que só possui o nome e o valor de cada produto
