@@ -25,7 +25,7 @@ export default function Home() {
           </tr>
           :
           listaUfs.map((dadosUF, index) => (
-            <tr key>
+            <tr key={index}>
               <td>{dadosUF.id}</td>
               <td>{dadosUF.uf}</td>
               <td>{dadosUF.nome}</td>
