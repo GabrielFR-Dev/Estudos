@@ -18,20 +18,25 @@ export default function Home() {
           </tr>
         </thead>
         <tbody>
-        {
-          listaUfs.erro ?
-          <tr>
-            <td colSpan="3">{listaUfs}</td>
-          </tr>
-          :
-          listaUfs.map((dadosUF, index) => (
-            <tr key={index}>
-              <td>{dadosUF.id}</td>
-              <td>{dadosUF.uf}</td>
-              <td>{dadosUF.nome}</td>
-            </tr>
-          ))
-        }
+          {
+            Array.isArray(listaUfs) ?
+              listaUfs.map((dadosUF, index) => (
+                <tr key={index}>
+                  <td>{dadosUF.id}</td>
+                  <td>{dadosUF.uf}</td>
+                  <td>{dadosUF.nome}</td>
+                </tr>
+              ))
+              : 
+              listaUfs.erro ? 
+              <tr>
+                <td colSpan={3}>{listaUfs.erro}</td>
+              </tr>
+              :
+              <tr>
+                <td colSpan="3">Erro ao consumir API</td>
+              </tr>
+          }
         </tbody>
       </table>
     </main>
