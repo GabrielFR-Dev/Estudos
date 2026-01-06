@@ -1,12 +1,14 @@
 const express = require('express');
 const app = express();
 
+const calculadoraIMC = require('./calculadoraIMC');
+
 app.get('/', (req, res) => {
 
     let peso = req.query.peso;
     let altura = req.query.altura;
 
-    let imc = peso / (altura * altura);
+    let imc = calculadoraIMC.efeturarCalculoImc(peso, altura);
 
     res.json({imc: imc});
 });
