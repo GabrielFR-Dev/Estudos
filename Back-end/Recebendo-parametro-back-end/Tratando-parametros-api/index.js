@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     let peso = req.query.peso;
     let altura = req.query.altura;
 
-    let imc = calculadoraIMC.efeturarCalculoImc(peso, altura);
+    let imc = calculadoraIMC.efetuarCalculoImc(peso, altura);
 
     res.json({imc: imc});
 });

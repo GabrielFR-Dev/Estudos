@@ -3,4 +3,4 @@ function efetuarCalculoIMC(peso, altura) {
     return imc;
 }
 
-exports.efeturarCalculoImc = efetuarCalculoIMC;
+exports.efetuarCalculoImc = efetuarCalculoIMC;
