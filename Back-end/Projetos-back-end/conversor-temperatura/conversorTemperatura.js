@@ -5,18 +5,20 @@ function converteParaFahrenheit(celsius) {
 }
 function converteParaCelsius(fahrenheit) {
     let celsius = (fahrenheit - 32) / 1.8;
-    return celsius
+    
+    return celsius;
 }
 
 function converteTemperatura(temperatura, conversor) {
 
     let resultado;
+    let conversorAtualizado = conversor.toLowerCase();
 
-    if(conversor === 'C')
+    if(conversorAtualizado == 'c')
     {
         resultado = converteParaCelsius(temperatura);
     }
-    else if(conversor === 'F')
+    else if(conversorAtualizado == 'f')
     {
         resultado = converteParaFahrenheit(temperatura);
     }
@@ -27,4 +29,15 @@ function converteTemperatura(temperatura, conversor) {
     return resultado;
 }
 
+function validaParametro(parametro){
+    if(isNaN(parametro)){
+        return false;
+    }
+    else 
+    {
+        return true;
+    }
+}
+
+exports.validaParametro = validaParametro;
 exports.converteTemperatura = converteTemperatura;
