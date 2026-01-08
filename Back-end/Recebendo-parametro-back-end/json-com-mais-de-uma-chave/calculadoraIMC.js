@@ -6,7 +6,7 @@ function efetuarCalculoIMC(peso, altura) {
 function retornaStatusIMC(imc) {
     let status;
 
-    if(unc < 18.5) {
+    if(imc < 18.5) {
         status = 'Abaixo do peso';
     }
     else if(imc >= 18.5 && imc <  24.9)
@@ -20,7 +20,18 @@ function retornaStatusIMC(imc) {
     else {
         status = 'Obeso';
     }
+    return status;
+}
+
+function validaParametro(parametro){
+    if(isNaN(parametro)){
+        return false;
+    }
+    else {
+        return true;
+    }
 }
 
 exports.efetuarCalculoIMC = efetuarCalculoIMC;
 exports.retornaStatusIMC = retornaStatusIMC;
+exports.validaParametro = validaParametro;
