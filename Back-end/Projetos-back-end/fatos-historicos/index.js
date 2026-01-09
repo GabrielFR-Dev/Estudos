@@ -1,9 +1,15 @@
-const express = require('express');
+import express from 'express';
+import servicoBuscarFatoPorAno from './servico/servico.js';
+
 const app = express();
 
 app.get('/', (req, res) => {
+    let anoFato = req.query.ano;
 
-    res.json({"mensagem": "API DE FATO HISTORICO"})
+    var fato = servicoBuscarFatoPorAno(anoFato);
+
+
+    res.json({ano:fato})
 })
 
 
