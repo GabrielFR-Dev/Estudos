@@ -9,9 +9,17 @@ app.get('/ufs', (req, res) => {
 
 app.get('/ufs/:iduf', (req, res) => {
     const idUF = parseInt(req.params.iduf);
-    const uf = colecaoUF.find(u => u.id === idUF);
+    let uf;
 
-    res.json(uf);
+    if (!(isNaN(idUF))) {
+        uf = colecaoUF.find(u => u.id === idUF);
+    }
+
+    if (uf) {
+        res.json(uf);
+    } else {
+        res.status(404).send();
+    }
 });
 
 app.listen(8080, () => {
