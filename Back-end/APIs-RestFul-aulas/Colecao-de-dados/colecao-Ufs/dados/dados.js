@@ -1,4 +1,4 @@
-colecaoUF = [
+const colecaoUF = [
     {
         id: 1,
         uf: "AC",
@@ -135,4 +135,4 @@ colecaoUF = [
         nome: "Tocantins"
     }]
 
-export default colecaoUF
+export default colecaoUF;
