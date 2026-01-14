@@ -1,5 +1,5 @@
 import express from 'express';
-import { buscarUfs, buscarUfPorId, buscarUfsPorNome } from './servicos/servico';
+import { buscarUfs, buscarUfPorId, buscarUfsPorNome } from './servicos/servico.js';
 
 const app = express();
 
@@ -20,7 +20,7 @@ app.get('/ufs/:iduf', (req, res) => {
    
     if (uf) {
         res.json(uf);
-    } else if (isNaN(paseInt(req.params.iduf))) {
+    } else if (isNaN(parseInt(req.params.iduf))) {
         res.status(400).send({"erro": "Requisição inválida"})
     } else {
         res.status(404).send({ "erro": "UF não encontrada" });
