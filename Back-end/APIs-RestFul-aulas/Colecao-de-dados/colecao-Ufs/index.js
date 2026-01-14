@@ -1,15 +1,12 @@
 import express from 'express';
-import colecaoUF from './dados/dados.js';
+import { buscarUfs, buscarUfPorId, buscarUfsPorNome } from './servicos/servico';
 
 const app = express();
 
-const buscarUfsPorNome = (nomeUF) => {
-    return colecaoUF.filter(uf => uf.nome.toLowerCase().includes(nomeUF.toLowerCase()));
-}
 
 app.get('/ufs', (req, res) => {
     const nomeUF = req.query.busca;
-    const resultado = nomeUF ? buscarUfsPorNome(nomeUF) : colecaoUF;
+    const resultado = nomeUF ? buscarUfsPorNome(nomeUF) : buscarUfs();
 
     if (resultado.length > 0 ) {
         res.json(resultado);
@@ -19,23 +16,14 @@ app.get('/ufs', (req, res) => {
 });
 
 app.get('/ufs/:iduf', (req, res) => {
-    const idUF = parseInt(req.params.iduf);
-    let uf;
-    let mensagemErro = '';
-
-    if (!(isNaN(idUF))) {
-        uf = colecaoUF.find(u => u.id === idUF);
-        if (!uf) {
-            mensagemErro = 'UF não encontrada';
-        }
-    } else {
-        mensagemErro = 'Requisição inválida';
-    }
-
+    const uf = buscarUfPorId(req.params.iduf);
+   
     if (uf) {
         res.json(uf);
+    } else if (isNaN(paseInt(req.params.iduf))) {
+        res.status(400).send({"erro": "Requisição inválida"})
     } else {
-        res.status(404).send({ "erro": mensagemErro });
+        res.status(404).send({ "erro": "UF não encontrada" });
     }
 });
 
