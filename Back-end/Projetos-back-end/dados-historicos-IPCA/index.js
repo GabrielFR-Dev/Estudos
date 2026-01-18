@@ -1,39 +1,55 @@
 import express from 'express';
-import { retornaAnoEspeficifico, retornaTodaColecao, retornaIdEspecifico } from './servico/servico.js';
+import { buscarHistorico, buscarHistoricoPorAno, buscarHistoricoPorId, calcularReajuste, validacaoErro } from './servico/servico.js';
 
 const app = express();
 
+app.get('/historicoIPCA/calculo', (req, res) => {
+  const valor = parseFloat(req.query.valor);
+  const dataInicialMes = parseInt(req.query.mesInicial);
+  const dataInicialAno = parseInt(req.query.anoInicial);
+  const dataFinalMes = parseInt(req.query.mesFinal);
+  const dataFinalAno = parseInt(req.query.anoFinal);
 
-app.get('/historicoIPCA', (req, res) => {
-    const ano = req.query.ano;
-    const retornaColecao = retornaTodaColecao();
-    
-    if (ano >= 2015 && ano <= 2023) {
-        const buscarAno = retornaAnoEspeficifico(ano);
-        return res.json(buscarAno);
-    } 
-    else if (ano < 0) {
-        return res.json(retornaColecao);
-    }
-    else {
-        return res.status(400).send({ "erro": "Ano inválido. Por favor, insira um ano entre 2015 e 2023." });
-    }
+  if (validacaoErro(valor, dataInicialMes, dataInicialAno, dataFinalMes, dataFinalAno)) {
+    res.status(400).json({ erro: 'Parâmetros inválidos' });
+    return;
+  }
 
-
-  
+  const resultado = calcularReajuste(valor, dataInicialMes, dataInicialAno, dataFinalMes, dataFinalAno);
+  res.json({ resultado: resultado });
 });
-
 
 app.get('/historicoIPCA/:id', (req, res) => {
-    const buscarId = retornaIdEspecifico(req.params.id);
-    return res.json(buscarId);
+  const id = parseInt(req.params.id);
+
+  if (isNaN(id)) {
+    res.status(404).json({ erro: 'ID inválido' });
+    return;
+  }
+
+  const elemento = buscarHistoricoPorId(id);
+  if (elemento) {
+    res.json(elemento);
+  } else {
+    res.status(404).json({ erro: 'Elemento não encontrado' });
+  }
 });
 
+app.get('/historicoIPCA', (req, res) => {
+  const ano = parseInt(req.query.ano);
 
-/* app.get('/historico/ipca/:calculo', (req, res) => {
-
-}); 4 rota de calculo */
+  if (isNaN(ano)) {
+    res.json(buscarHistorico());
+  } else {
+    const resultado = buscarHistoricoPorAno(ano);
+    if (resultado.length > 0) {
+      res.json(resultado);
+    } else {
+      res.status(404).json({ erro: 'Nenhum histórico encontrado para o ano especificado' });
+    }
+  }
+});
 
 app.listen(8080, () => {
-    console.log('Servidor rodando na porta 8080');
+  console.log('Servidor iniciado na porta 8080');
 });
