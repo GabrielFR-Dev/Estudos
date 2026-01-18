@@ -8,4 +8,4 @@ function soma (numero_1, numero_2){
 
 let resultado = soma(5, 2);
 
-console.log(resultado)
+console.log(resultado) 
