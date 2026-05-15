@@ -67,6 +67,9 @@ Sinta-se à vontade para explorar, clonar e acompanhar minha jornada! 😄
 | 🟡 | JavaScript Intermediário | ✅ Concluído |
 | 🔵 | React + Hooks | ✅ Concluído|
 | ⚪ | Node.js e APIs | 📚 Estudando |
+| 🟢 | Express.js e AXIOS  | 📚 Estudando |
+| 🟢 | MySQL e SQL | 📚 Estudando |
+
 
 ---
 
